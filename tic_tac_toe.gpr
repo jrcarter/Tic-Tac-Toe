@@ -1,0 +1,17 @@
+with "../gnoga/src/gnoga.gpr";
+
+project Tic_Tac_Toe is
+   for Languages use ("Ada");
+   for Source_Dirs use (".");
+   for Object_Dir use ".";
+   for Exec_Dir use ".";
+   for Main use ("tic_tac_toe-program.adb");
+
+   package Binder is
+      for Default_Switches ("ada") use ("-E");
+   end Binder;
+
+   package Builder is
+      for Executable ("tic_tac_toe-program.adb") use "tic_tac_toe";
+   end Builder;
+end Tic_Tac_Toe;
