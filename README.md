@@ -1,4 +1,4 @@
-# Password_Gen
-A password generator using Gnoga
+# Tic-Tac-Toe
+A Gnoga program to play Tic-Tac-Toe
 
-Edit password_gen.gpr to match your location for Gnoga
+Edit tic_tac_toe.gpr to match your location for Gnoga
